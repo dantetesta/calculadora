@@ -3,143 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPA Luxness - Clube Privativo</title>
+    <title>Calculadora iPhone</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="models.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Luxness</div>
-        <ul class="nav-links">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">O Clube</a></li>
-            <li><a href="#services">Experiências</a></li>
-            <li><a href="#gallery">Ambientes</a></li>
-            <li><a href="#contact">Reservas</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Luxness</h1>
-            <p>Uma experiência única em entretenimento adulto de luxo</p>
-            <button class="neo-button">Faça sua Reserva</button>
+    <div class="calculator">
+        <div class="display">
+            <div id="previous"></div>
+            <div id="current">0</div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>O Clube</h2>
-            </div>
-            <div class="about-content glass">
-                <div class="about-text">
-                    <p>Bem-vindo ao mais exclusivo clube privativo da cidade. Um refúgio onde luxo, discrição e prazer se encontram em perfeita harmonia. Nossas acompanhantes de alto nível são criteriosamente selecionadas para proporcionar momentos inesquecíveis em um ambiente sofisticado e seguro.</p>
-                </div>
-                <div class="features">
-                    <div class="feature-card neo">
-                        <i class="fas fa-crown"></i>
-                        <h3>Exclusividade</h3>
-                    </div>
-                    <div class="feature-card neo">
-                        <i class="fas fa-user-shield"></i>
-                        <h3>Privacidade</h3>
-                    </div>
-                    <div class="feature-card neo">
-                        <i class="fas fa-gem"></i>
-                        <h3>Sofisticação</h3>
-                    </div>
-                </div>
-            </div>
+        <div class="buttons">
+            <button class="operation clear">AC</button>
+            <button class="operation">±</button>
+            <button class="operation">%</button>
+            <button class="operation">÷</button>
+            
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operation">×</button>
+            
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operation">−</button>
+            
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operation">+</button>
+            
+            <button class="number zero">0</button>
+            <button class="number">.</button>
+            <button class="operation">=</button>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Experiências</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card glass">
-                    <i class="fas fa-glass-champagne"></i>
-                    <h3>Champagne Room</h3>
-                    <p>Ambiente exclusivo com as melhores bebidas premium</p>
-                </div>
-                <div class="service-card glass">
-                    <i class="fas fa-bed"></i>
-                    <h3>Suítes Temáticas</h3>
-                    <p>Ambientes luxuosos para momentos especiais</p>
-                </div>
-                <div class="service-card glass">
-                    <i class="fas fa-spa"></i>
-                    <h3>Área Wellness</h3>
-                    <p>Spa completo com hidromassagem e sauna</p>
-                </div>
-                <div class="service-card glass">
-                    <i class="fas fa-star"></i>
-                    <h3>Acompanhantes Elite</h3>
-                    <p>As mais belas e refinadas acompanhantes</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nossos Ambientes</h2>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item neo">
-                    <img src="https://images.pexels.com/photos/3771823/pexels-photo-3771823.jpeg" alt="Ambiente Luxuoso">
-                </div>
-                <div class="gallery-item neo">
-                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg" alt="Área VIP">
-                </div>
-                <div class="gallery-item neo">
-                    <img src="https://images.pexels.com/photos/3771834/pexels-photo-3771834.jpeg" alt="Suíte Premium">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Reservas</h2>
-            </div>
-            <form class="contact-form neo">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="tel" placeholder="Telefone" required>
-                <input type="email" placeholder="E-mail" required>
-                <textarea placeholder="Mensagem" rows="5" required></textarea>
-                <button type="submit" class="neo-button">Enviar Mensagem</button>
-            </form>
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+55 (11) 99999-9999</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>reservas@luxness.com</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Localização Discreta - São Paulo, SP</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
